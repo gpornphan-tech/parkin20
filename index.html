@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>รติยา ไก่เขย่า - จองล็อกตลาดบางแสน (ลิงก์ใหม่)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 10px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 20px;
+      margin: 10px 0 5px;
+    }
+    p {
+      font-size: 16px;
+      margin: 0 0 10px;
+    }
+    .copy-box {
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    iframe {
+      width: 100%;
+      height: 75vh;
+      border: none;
+      margin-top: 10px;
+    }
+    .note {
+      font-size: 13px;
+      color: #888;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>⏱ จองล็อกตลาดบางแสน (ลิงก์ใหม่)</h1>
+  <p>ระบบรีเฟรชอัตโนมัติทุก <strong>3 วินาที</strong></p>
+
+  <div class="copy-box" onclick="copyText()">รติยา ไก่เขย่า</div>
+
+  <iframe id="fbFrame" src="https://www.facebook.com/parkin20"></iframe>
+
+  <script>
+    setInterval(() => {
+      const frame = document.getElementById('fbFrame');
+      frame.src = frame.src;
+    }, 3000);
+
+    function copyText() {
+      const text = "รติยา ไก่เขย่า";
+      navigator.clipboard.writeText(text).then(() => {
+        alert("คัดลอกข้อความแล้ว: " + text);
+      });
+    }
+  </script>
+
+  <div class="note">
+    แตะเพื่อคัดลอกชื่อร้าน แล้ววางในคอมเมนต์ใต้โพสต์จองล็อกได้ทันที 😊<br>
+    แนะนำใช้บน Google Chrome หรือ Safari (มือถือก็ใช้ได้)
+  </div>
+</body>
+</html>
